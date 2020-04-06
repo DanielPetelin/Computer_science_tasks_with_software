@@ -1,5 +1,4 @@
 let arr = [];
-let out = '';
 let yourNum = document.querySelector('#num').value;
 
 function sp() {
@@ -9,8 +8,8 @@ function sp() {
     arr.push(1);
     document.querySelector('#out').innerHTML = result + ' ваш выбор ( 1 )';
 
-    if (arr.length == 5 && yourNum == 3) {
-        document.querySelector('#out2').innerHTML = 'Это гениально!';
+    if (yourNum == 3) {
+        document.querySelector('#out2').innerHTML = 'Вы победили! Количество ваших действий равно ' + arr.length + '. Лучший рекорд 5';
     };
 };
 
@@ -21,9 +20,9 @@ function delOne() {
     arr.push(2);
     document.querySelector('#out').innerHTML = result + ' ваш выбор ( 1 )';
 
-    if (arr.length == 5 && yourNum == 3) {
-        document.querySelector('#out2').innerHTML = 'Это гениально!';
+    if (yourNum == 3) {
+        document.querySelector('#out2').innerHTML = 'Вы победили! Количество ваших действий равно ' + arr.length + '. Лучший рекорд 5';
     };
 };
 
-console.log(arr);
+// console.log(arr);
